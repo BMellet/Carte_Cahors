@@ -1,0 +1,55 @@
+body a:link, body a:focus, body a:active {
+  outline: none; }
+
+body #mapid {
+  width: 100vw;
+  height: 100vh; }
+
+body .sidenav-trigger {
+  position: fixed;
+  top: 10px;
+  left: 44%;
+  z-index: 999;
+  background-color: #009bda;
+  transition: ease-in-out 0.5s; }
+
+body .sidenav {
+  z-index: 1000; }
+  @media screen and (max-width: 640px) {
+    body .sidenav {
+      width: 100%; } }
+  body .sidenav .bouton-close .sidenav-close {
+    position: absolute;
+    padding: 0;
+    left: -12;
+    top: 0; }
+  body .sidenav .user-view {
+    height: 160px;
+    background-image: url("/dist/img/GrandCahors.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 4px; }
+    @media screen and (max-width: 640px) {
+      body .sidenav .user-view {
+        height: 170px; } }
+  body .sidenav .collapsible-header {
+    text-transform: capitalize; }
+  body .sidenav .collapsible-body li {
+    text-align: center; }
+    body .sidenav .collapsible-body li a {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center; }
+    body .sidenav .collapsible-body li .sub-icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 5%; }
+
+body .sidenav-trigger:hover {
+  background-color: #0073b5;
+  transition: ease-in-out 0.5s; }
+
+body .sidenav-trigger:focus {
+  background-color: #0073b5;
+  transition: ease-in-out 0.5s; }

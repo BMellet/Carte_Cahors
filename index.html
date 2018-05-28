@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- MATERIALIZE -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    
+    <link rel="stylesheet" href="/dist/css/gmap.css">
+    <title>GoogleMap Cahors</title>
+</head>
+<body>
+    <div id="map"></div>
+    <ul id="slide-out" class="sidenav">
+            <li><div class="user-view"></div>
+            <li><div class="bouton-close"><a class="sidenav-close" href="#!"><i class="material-icons medium">close</i></a></div></li></li>
+            </li>
+            <li><div class="divider"></div></li>
+            <li><a class="subheader center">Emplacements</a></li>
+            <ul id="coll-nav" class="collapsible"></ul>
+    </ul>
+        <a href="#" data-target="slide-out" class="btn sidenav-trigger"><i class="material-icons">menu</i></a>
+
+    <script src="/dist/js/jquery.min.js"></script>   
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfCWrlFjnW-JzFVm8W4zczzlhlwXUkxfU&callback=initMap"
+    type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="./dist/js/gmap.js"></script>
+</body>
+</html>

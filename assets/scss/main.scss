@@ -1,0 +1,90 @@
+body
+{
+    a:link,a:focus,a:active
+    {
+        outline: none;
+
+
+    }
+    #mapid
+    {
+        width: 100vw;
+        height: 100vh;
+    }
+    .sidenav-trigger
+    {
+        position: fixed;
+        top: 10px;
+        left: 44%;
+        z-index: 999;
+        background-color: #009bda;
+        transition: ease-in-out 0.5s;        
+
+    }
+    .sidenav
+    {
+        z-index: 1000;
+        @media screen and (max-width:640px)
+        {
+                width: 100%;
+        }
+        .bouton-close
+        {
+            .sidenav-close
+            {
+                position: absolute;
+                padding: 0;
+                left: -12;
+                top: 0;
+            }
+
+        }
+        .user-view
+        {
+            height: 160px;
+            background-image: url('/dist/img/GrandCahors.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-y: 4px;
+            @media screen and (max-width:640px)
+            {
+                height: 170px;
+            }
+        }
+        .collapsible-header
+        {
+            text-transform: capitalize;
+        }
+        .collapsible-body li
+        {
+            text-align: center;
+            a
+            {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content:flex-start;
+                align-items: center;
+            }
+            .sub-icon
+            {
+                width: 20px;
+                height: 20px;
+                margin-right: 5%;
+            }
+        }
+
+    }
+    .sidenav-trigger:hover
+    {
+        background-color: #0073b5;
+        transition: ease-in-out 0.5s;
+    }
+    .sidenav-trigger:focus
+    {
+        background-color: #0073b5;
+        transition: ease-in-out 0.5s;
+    }
+}
+.marker-icon
+{
+}
